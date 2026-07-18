@@ -1,22 +1,5 @@
-import { ArrowLeft, ExternalLink, FileText, Image as ImageIcon } from 'lucide-react';
+import { ArrowLeft, ExternalLink, FileText } from 'lucide-react';
 import PreviewModal from './PreviewModal';
-
-function EvidenceItem({ icon: Icon, label, value, type, onPreview }) {
-  const isPending = !value || value === 'Sẽ cập nhật sau';
-  const isNotRequired = value === 'Không yêu cầu';
-  return (
-    <div className="glass-panel hover-lift-subtle flex min-h-44 flex-col p-6 hover:bg-white/60">
-      <Icon size={22} strokeWidth={1.5} className="text-primary" />
-      <p className="mt-6 font-display text-2xl font-medium text-primary">{label}</p>
-      <div className="mt-auto pt-6">
-        {isPending && <span className="status-muted">Sẽ cập nhật sau</span>}
-        {isNotRequired && <span className="status-muted">Không yêu cầu</span>}
-        {!isPending && !isNotRequired && type === 'drive' && <a href={value} target="_blank" rel="noreferrer" className="button-secondary">Mở Google Drive <ExternalLink size={14} /></a>}
-        {!isPending && !isNotRequired && type !== 'drive' && <a href={value} onClick={(event) => onPreview(event, value, type)} className="button-secondary">Xem {type === 'pdf' ? 'báo cáo' : 'hình ảnh'} <ExternalLink size={14} /></a>}
-      </div>
-    </div>
-  );
-}
 
 export default function AssignmentDetail({ project, onBack, previewData, onPreview, onClosePreview }) {
   return (
@@ -50,11 +33,31 @@ export default function AssignmentDetail({ project, onBack, previewData, onPrevi
           <p className="mt-7 max-w-4xl text-base leading-8">{project.process}</p>
         </section>
         <section className="border-t border-primary/10 p-7 lg:p-12">
-          <p className="editorial-label">Sản phẩm & Minh chứng</p>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <EvidenceItem icon={FileText} label="Báo cáo (PDF/Word)" value={project.report} type="pdf" onPreview={onPreview} />
-            <EvidenceItem icon={ImageIcon} label="Ảnh chụp màn hình" value={project.evidenceImg} type="img" onPreview={onPreview} />
-            <EvidenceItem icon={ExternalLink} label="Tài nguyên Google Drive" value={project.driveLink} type="drive" onPreview={onPreview} />
+          <p className="editorial-label">Sản phẩm học phần</p>
+          <div className="mt-6">
+            <div className="glass-panel hover-lift-subtle flex flex-col gap-4 p-7 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/80 bg-white/60 text-primary shadow-sm backdrop-blur-xl">
+                  <FileText size={24} />
+                </div>
+                <div>
+                  <h3 className="font-display text-2xl font-medium text-primary">Báo cáo học phần (PDF)</h3>
+                  <p className="text-xs text-secondary">Tài liệu báo cáo chi tiết của bài tập thực hành</p>
+                </div>
+              </div>
+              {project.report ? (
+                <a
+                  href={project.report}
+                  onClick={(event) => onPreview(event, project.report, 'pdf')}
+                  className="button-primary w-full sm:w-auto"
+                >
+                  <span>Xem báo cáo PDF</span>
+                  <ExternalLink size={15} />
+                </a>
+              ) : (
+                <span className="status-muted">Sẽ cập nhật sau</span>
+              )}
+            </div>
           </div>
         </section>
       </article>
