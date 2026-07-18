@@ -40,7 +40,7 @@ export default function Summary() {
           <div className="paper-plate sticky top-28 p-8">
             <h3 className="border-b border-primary/10 pb-3 text-[12px] font-bold uppercase tracking-[0.18em] text-charcoal">Thông Tin Lưu Trữ</h3>
             <div className="mt-8 space-y-6">
-              <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Ngày ghi chú</p><p className="mt-2 text-sm">24 Tháng 06, 2026</p></div>
+              <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Ngày ghi chú</p><p className="mt-2 text-sm">10 Tháng 07, 2026</p></div>
               <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Học kỳ</p><p className="mt-2 text-sm">Học kỳ II - 2025-2026</p></div>
               <div><p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-dark">Trạng thái</p><p className="mt-2 text-sm font-bold uppercase tracking-[0.08em] text-primary">Hoàn tất lưu trữ</p></div>
             </div>
