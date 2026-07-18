@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vu Nguyen Trang | Digital Catalyst Profile</title>
+<!-- Google Fonts: EB Garamond for Serif, Work Sans for Sans-Serif -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(247, 244, 236, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .bg-mediterranean-gradient {
+            background: radial-gradient(circle at top right, rgba(0, 119, 200, 0.08), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(72, 107, 31, 0.08), transparent 40%);
+        }
+
+        body {
+            background-color: #F7F4EC;
+            scroll-behavior: smooth;
+        }
+
+        .editorial-divider {
+            position: relative;
+            height: 1px;
+            background: rgba(0, 119, 200, 0.2);
+            width: 100%;
+        }
+
+        .editorial-divider::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 4px;
+            height: 4px;
+            background-color: #F2C400;
+            border-radius: 50%;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e5e2da",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#c3ed91",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "on-secondary-fixed": "#0f2000",
+                      "surface-container": "#f1eee6",
+                      "tertiary-container": "#cea700",
+                      "error-container": "#ffdad6",
+                      "glass-surface": "rgba(247, 244, 236, 0.6)",
+                      "santorini-white": "#F7F4EC",
+                      "surface": "#fcf9f1",
+                      "on-surface-variant": "#404751",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#aad37a",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#001d36",
+                      "surface-container-highest": "#e5e2da",
+                      "outline": "#717783",
+                      "outline-variant": "#c0c7d3",
+                      "inverse-on-surface": "#f3f1e9",
+                      "tertiary-fixed-dim": "#efc100",
+                      "on-primary-fixed-variant": "#00497e",
+                      "primary": "#005e9f",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#4e3d00",
+                      "surface-dim": "#dcdad2",
+                      "secondary-fixed": "#c5f094",
+                      "inverse-surface": "#31312b",
+                      "surface-tint": "#0061a5",
+                      "aegean-blue": "#0077C8",
+                      "surface-container-high": "#ebe8e0",
+                      "surface-bright": "#fcf9f1",
+                      "secondary": "#45681c",
+                      "primary-fixed": "#d2e4ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#fbfbff",
+                      "on-background": "#1c1c17",
+                      "on-secondary-container": "#496c20",
+                      "error": "#ba1a1a",
+                      "primary-container": "#0077c8",
+                      "tertiary": "#735c00",
+                      "tertiary-fixed": "#ffe085",
+                      "on-tertiary-fixed": "#231b00",
+                      "sunflower-yellow": "#F2C400",
+                      "inverse-primary": "#9fcaff",
+                      "on-primary": "#ffffff",
+                      "primary-fixed-dim": "#9fcaff",
+                      "glass-border": "rgba(255, 255, 255, 0.4)",
+                      "on-surface": "#1c1c17",
+                      "background": "#fcf9f1",
+                      "surface-container-low": "#f6f3eb",
+                      "on-secondary-fixed-variant": "#2e4f03",
+                      "olive-green": "#486B1F"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-lg": "120px",
+                      "section-gap-sm": "80px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "display-lg": ["EB Garamond"],
+                      "label-sm": ["Work Sans"],
+                      "body-md": ["Work Sans"],
+                      "headline-md": ["EB Garamond"],
+                      "headline-lg": ["EB Garamond"],
+                      "body-lg": ["Work Sans"],
+                      "headline-lg-mobile": ["EB Garamond"]
+              },
+              "fontSize": {
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-santorini-white font-body-md text-on-surface overflow-x-hidden bg-mediterranean-gradient">
+<!-- SideNavBar (Mandatory from JSON) -->
+<nav class="fixed left-0 top-0 h-full w-64 bg-glass-surface/60 backdrop-blur-xl border-r border-glass-border shadow-sm flex flex-col gap-unit p-gutter z-50 hidden md:flex">
+<div class="mb-8">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-aegean-blue/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-aegean-blue">school</span>
+</div>
+<h1 class="font-display-lg text-headline-md text-aegean-blue">Portfolio</h1>
+</div>
+<p class="font-label-sm text-label-sm text-olive-green uppercase tracking-widest">Vu Nguyen Trang</p>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:text-aegean-blue pl-4 hover:bg-white/10 transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-sm">Overview</span>
+</a>
+<!-- Active State: Profile -->
+<a class="flex items-center gap-3 py-3 text-olive-green font-bold border-l-4 border-sunflower-yellow pl-4 bg-white/20 transition-all duration-300 rounded-r-lg" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm">Profile</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:text-aegean-blue pl-4 hover:bg-white/10 transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-label-sm">Learning Map</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:text-aegean-blue pl-4 hover:bg-white/10 transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-sm">Assignments</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:text-aegean-blue pl-4 hover:bg-white/10 transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">fact_check</span>
+<span class="font-label-sm">Evidence</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:text-aegean-blue pl-4 hover:bg-white/10 transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">rule</span>
+<span class="font-label-sm">Rubric</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:text-aegean-blue pl-4 hover:bg-white/10 transition-all duration-300 rounded-lg" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-label-sm">Reflection</span>
+</a>
+</div>
+<button class="mt-auto w-full bg-sunflower-yellow text-aegean-blue font-bold py-4 rounded-lg scale-100 active:scale-95 transition-transform">
+            Contact Me
+        </button>
+</nav>
+<!-- TopAppBar (Mandatory from JSON) -->
+<header class="sticky top-0 z-40 w-full bg-glass-surface/60 backdrop-blur-xl border-b border-glass-border shadow-sm flex justify-between items-center h-16 px-margin-desktop md:ml-64">
+<h2 class="font-headline-md text-headline-md text-aegean-blue">Portfolio Index</h2>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-sm text-aegean-blue border-b-2 border-sunflower-yellow py-1 transition-colors" href="#">AY 2023-2024</a>
+<a class="font-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">Resources</a>
+<a class="font-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-sunflower-yellow focus:outline-none focus:ring-2 focus:ring-sunflower-yellow p-2 rounded-full transition-colors">notifications</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-sunflower-yellow focus:outline-none focus:ring-2 focus:ring-sunflower-yellow p-2 rounded-full transition-colors">settings</button>
+</div>
+</header>
+<main class="md:ml-64 px-margin-mobile md:px-margin-desktop py-section-gap-sm">
+<!-- Hero Section: Digital Catalyst -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center mb-section-gap-lg">
+<div class="lg:col-span-7">
+<span class="font-label-sm text-olive-green uppercase tracking-widest block mb-4">Strategic Visionary</span>
+<h1 class="font-display-lg text-display-lg text-aegean-blue mb-6">
+                    Digital <br/>
+<span class="italic text-olive-green">Catalyst</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed mb-8">
+                    Bridging the gap between <span class="text-aegean-blue font-semibold">Data-Driven Thinking</span> and <span class="text-olive-green font-semibold">Digital Creativity</span>. Shaping modern academic and professional narratives through structured innovation and Mediterranean precision.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-sunflower-yellow text-aegean-blue font-bold px-8 py-4 rounded-lg shadow-sm hover:shadow-md transition-all">View Projects</button>
+<button class="border border-aegean-blue text-aegean-blue px-8 py-4 rounded-lg hover:bg-aegean-blue/5 transition-all">Download Portfolio</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="glass-panel p-4 rounded-xl rotate-2 hover:rotate-0 transition-transform duration-700 shadow-xl overflow-hidden aspect-[3/4]">
+<img alt="Vu Nguyen Trang Profile" class="w-full h-full object-cover rounded-lg filter saturate-105 brightness-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVoOADqWfPO98Vxxp9X9_8mLvZ6BSiYzz9KeX9i54WIMrg3SeZsdNeaycSQ-XIzR8hUC9sgYsMqypkHPnvXNYBGURCM4G1MJHcJkdgpCJVrDlboxgGWI7qCDSh-Fq9szZAqoEUWnJbCY351xaFda9-IOJcMM5V5BOHc4p8hN2WdcFiRgT5Gq60ZHSarhRIHZKET9FRNxuBWUPB6DOA0O_3yeKKl2AUDYI7guR7O76k8bSSoXZ3-x_ZEvLc26Xd8NZ0c-03BhrB1Av"/>
+<div class="absolute inset-0 bg-gradient-to-t from-aegean-blue/40 to-transparent pointer-events-none"></div>
+</div>
+<!-- Decorative elements -->
+<div class="absolute -z-10 -top-8 -right-8 w-32 h-32 bg-sunflower-yellow opacity-20 blur-3xl"></div>
+<div class="absolute -z-10 -bottom-8 -left-8 w-40 h-40 bg-olive-green opacity-20 blur-3xl"></div>
+</div>
+</section>
+<div class="editorial-divider mb-section-gap-sm"></div>
+<!-- Skill Architecture Section -->
+<section class="mb-section-gap-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-aegean-blue">Skill Architecture</h2>
+<p class="text-on-surface-variant font-body-md mt-2">The structural pillars of my digital expertise.</p>
+</div>
+<div class="flex gap-2">
+<span class="px-4 py-1 rounded-full bg-olive-green/10 text-olive-green font-label-sm">Data Analysis</span>
+<span class="px-4 py-1 rounded-full bg-aegean-blue/10 text-aegean-blue font-label-sm">Creative Strategy</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Skill Card 1 -->
+<div class="glass-panel p-gutter rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-12 h-12 rounded-lg bg-aegean-blue text-white flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-aegean-blue mb-4">Precision Analytics</h3>
+<p class="text-on-surface-variant leading-relaxed">Synthesizing complex data sets into actionable academic strategies, ensuring every decision is backed by empirical evidence and clarity.</p>
+<div class="mt-8 pt-6 border-t border-glass-border">
+<div class="flex justify-between font-label-sm text-xs mb-2">
+<span>Proficiency</span>
+<span>95%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-aegean-blue w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- Skill Card 2 -->
+<div class="glass-panel p-gutter rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-12 h-12 rounded-lg bg-olive-green text-white flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">brush</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-olive-green mb-4">Digital Creativity</h3>
+<p class="text-on-surface-variant leading-relaxed">Designing immersive digital experiences that resonate. Utilizing aesthetic principles inspired by Mediterranean architectural minimalism.</p>
+<div class="mt-8 pt-6 border-t border-glass-border">
+<div class="flex justify-between font-label-sm text-xs mb-2">
+<span>Innovation</span>
+<span>88%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-olive-green w-[88%]"></div>
+</div>
+</div>
+</div>
+<!-- Skill Card 3 -->
+<div class="glass-panel p-gutter rounded-xl hover:translate-y-[-8px] transition-transform duration-500">
+<div class="w-12 h-12 rounded-lg bg-sunflower-yellow text-aegean-blue flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-aegean-blue mb-4">System Integration</h3>
+<p class="text-on-surface-variant leading-relaxed">Connecting disparate academic systems into a cohesive portfolio infrastructure, optimized for searchability and long-term impact.</p>
+<div class="mt-8 pt-6 border-t border-glass-border">
+<div class="flex justify-between font-label-sm text-xs mb-2">
+<span>Coordination</span>
+<span>92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-sunflower-yellow w-[92%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Bento Grid Section -->
+<section class="mb-section-gap-lg">
+<h2 class="font-headline-lg text-headline-lg text-aegean-blue mb-12">Featured Initiatives</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[800px]">
+<!-- Main Featured Project -->
+<div class="md:col-span-2 md:row-span-2 glass-panel p-8 rounded-2xl flex flex-col group relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-10" data-alt="A sophisticated architectural concept of a modern Mediterranean research center, featuring clean white lines, large glass walls, and lush green olive trees reflecting in the windows. Sun-drenched atmosphere with bright blue Aegean skies in the background. Digital rendering style, high-end professional architectural visualization." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwgDNstaDBwFpAt54InoLhy7dBeYdv-E94zFlfW9aJbU80fKAEL5c6TP30VUdHKxUHtpue12m09AXtQ_ibqouRiWWHyXfVIzydWIlF3rvMU4hBpxlWtAy7RPrXjVNne0MMdC6AGeXq2PdJfaw5taPOa13rAAedimWPbU1kkQjWy13TF4A6vFBwfg49MS-4LP3Npu30G3WqwKE7bDaOO0DOnJrT_69JOlmk7rz-Z3b-AFe414LvSCrO4wG9w2bIzUhR6JT3fZliOEBR')"></div>
+<div class="relative z-10 h-full flex flex-col">
+<span class="text-sunflower-yellow font-bold text-xs uppercase tracking-widest mb-2">Flagship Project</span>
+<h3 class="font-display-lg text-4xl text-aegean-blue mb-4">Global Academic Exchange 2024</h3>
+<p class="text-on-surface-variant font-body-md mb-8 flex-grow">A cross-continental digital platform designed to facilitate seamless research data sharing between universities in Southeast Asia and the Mediterranean region.</p>
+<div class="flex items-center gap-4 mt-auto">
+<a class="flex items-center gap-2 text-aegean-blue font-bold group" href="#">
+                                Explore Case Study
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Secondary Project 1 -->
+<div class="md:col-span-2 md:row-span-1 glass-panel p-8 rounded-2xl flex flex-col group">
+<div class="flex justify-between items-start mb-4">
+<div class="w-10 h-10 rounded-full bg-olive-green/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-olive-green">model_training</span>
+</div>
+<span class="font-label-sm text-on-surface-variant/60">Research</span>
+</div>
+<h3 class="font-headline-md text-aegean-blue mb-2">Predictive Pedagogy</h3>
+<p class="text-on-surface-variant text-sm">Applying machine learning to predict student engagement levels in hybrid learning environments.</p>
+</div>
+<!-- Secondary Project 2 -->
+<div class="md:col-span-1 md:row-span-1 glass-panel p-8 rounded-2xl flex flex-col group">
+<div class="w-10 h-10 rounded-full bg-sunflower-yellow/20 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-aegean-blue">public</span>
+</div>
+<h3 class="font-headline-md text-lg text-aegean-blue mb-1">Sustainable Tech</h3>
+<p class="text-on-surface-variant text-xs">Digital infrastructure for eco-tourism mapping.</p>
+</div>
+<!-- Secondary Project 3 -->
+<div class="md:col-span-1 md:row-span-1 glass-panel p-8 rounded-2xl flex flex-col group">
+<div class="w-10 h-10 rounded-full bg-aegean-blue/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-aegean-blue">auto_awesome</span>
+</div>
+<h3 class="font-headline-md text-lg text-aegean-blue mb-1">Creative AI</h3>
+<p class="text-on-surface-variant text-xs">Generative art systems for editorial design.</p>
+</div>
+</div>
+</section>
+<!-- Narrative Quote Section -->
+<section class="mb-section-gap-lg">
+<div class="max-w-4xl mx-auto text-center px-4">
+<span class="material-symbols-outlined text-6xl text-sunflower-yellow/40 mb-8">format_quote</span>
+<blockquote class="font-display-lg text-headline-lg italic text-aegean-blue leading-tight mb-8">
+                    "True innovation happens when we treat data as a narrative and digital tools as our brushstrokes. I seek the intersection where logic meets inspiration."
+                </blockquote>
+<div class="editorial-divider w-24 mx-auto mb-6"></div>
+<cite class="not-italic">
+<p class="font-label-sm text-olive-green uppercase tracking-widest">Vu Nguyen Trang</p>
+<p class="text-on-surface-variant text-sm">Portfolio Curator &amp; Digital Catalyst</p>
+</cite>
+</div>
+</section>
+</main>
+<!-- Footer (Mandatory from JSON) -->
+<footer class="w-full py-16 bg-surface border-t border-aegean-blue/20 flex flex-col md:flex-row justify-between items-center px-margin-desktop md:ml-64 gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-olive-green">Vu Nguyen Trang</p>
+<p class="font-body-md text-on-surface-variant text-sm">© 2024 Vu Nguyen Trang. All Rights Reserved.</p>
+</div>
+<div class="flex gap-12">
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity opacity-100 hover:opacity-80 font-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity opacity-100 hover:opacity-80 font-label-sm" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity opacity-100 hover:opacity-80 font-label-sm" href="#">ResearchGate</a>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full border border-aegean-blue/20 flex items-center justify-center group hover:border-aegean-blue transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm text-on-surface-variant group-hover:text-aegean-blue">arrow_upward</span>
+</div>
+<span class="font-label-sm text-xs text-on-surface-variant/40">Back to Top</span>
+</div>
+</footer>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Simple parallax effect for hero image
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.lg\\:col-span-5 img');
+            if(heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.05}px)`;
+            }
+        });
+
+        // Hover effect for glass panels
+        const panels = document.querySelectorAll('.glass-panel');
+        panels.forEach(panel => {
+            panel.addEventListener('mousemove', (e) => {
+                const rect = panel.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                panel.style.setProperty('--mouse-x', `${x}px`);
+                panel.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

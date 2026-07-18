@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assessment Rubric | Vu Nguyen Trang Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #F7F4EC;
+            background-image: 
+                radial-gradient(at top right, rgba(0, 119, 200, 0.12), transparent 50%),
+                radial-gradient(at bottom left, rgba(72, 107, 31, 0.1), transparent 50%),
+                linear-gradient(rgba(0, 119, 200, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 119, 200, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(247, 244, 236, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-divider {
+            height: 1px;
+            background: rgba(0, 119, 200, 0.2);
+            position: relative;
+        }
+        .editorial-divider::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 4px;
+            height: 4px;
+            background: #F2C400;
+            border-radius: 50%;
+        }
+        .rubric-row:hover .row-indicator {
+            opacity: 1;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#e5e2da",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#c3ed91",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "on-secondary-fixed": "#0f2000",
+                      "surface-container": "#f1eee6",
+                      "tertiary-container": "#cea700",
+                      "error-container": "#ffdad6",
+                      "glass-surface": "rgba(247, 244, 236, 0.6)",
+                      "santorini-white": "#F7F4EC",
+                      "surface": "#fcf9f1",
+                      "on-surface-variant": "#404751",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#aad37a",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed": "#001d36",
+                      "surface-container-highest": "#e5e2da",
+                      "outline": "#717783",
+                      "outline-variant": "#c0c7d3",
+                      "inverse-on-surface": "#f3f1e9",
+                      "tertiary-fixed-dim": "#efc100",
+                      "on-primary-fixed-variant": "#00497e",
+                      "primary": "#005e9f",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-container": "#4e3d00",
+                      "surface-dim": "#dcdad2",
+                      "secondary-fixed": "#c5f094",
+                      "inverse-surface": "#31312b",
+                      "surface-tint": "#0061a5",
+                      "aegean-blue": "#0077C8",
+                      "surface-container-high": "#ebe8e0",
+                      "surface-bright": "#fcf9f1",
+                      "secondary": "#45681c",
+                      "primary-fixed": "#d2e4ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#fbfbff",
+                      "on-background": "#1c1c17",
+                      "on-secondary-container": "#496c20",
+                      "error": "#ba1a1a",
+                      "primary-container": "#0077c8",
+                      "tertiary": "#735c00",
+                      "tertiary-fixed": "#ffe085",
+                      "on-tertiary-fixed": "#231b00",
+                      "sunflower-yellow": "#F2C400",
+                      "inverse-primary": "#9fcaff",
+                      "on-primary": "#ffffff",
+                      "primary-fixed-dim": "#9fcaff",
+                      "glass-border": "rgba(255, 255, 255, 0.4)",
+                      "on-surface": "#1c1c17",
+                      "background": "#fcf9f1",
+                      "surface-container-low": "#f6f3eb",
+                      "on-secondary-fixed-variant": "#2e4f03",
+                      "olive-green": "#486B1F"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-lg": "120px",
+                      "section-gap-sm": "80px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "display-lg": ["EB Garamond"],
+                      "label-sm": ["Work Sans"],
+                      "body-md": ["Work Sans"],
+                      "headline-md": ["EB Garamond"],
+                      "headline-lg": ["EB Garamond"],
+                      "body-lg": ["Work Sans"],
+                      "headline-lg-mobile": ["EB Garamond"]
+              },
+              "fontSize": {
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                      "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- SideNavBar (Predicted) -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-glass-surface/60 backdrop-blur-xl border-r border-glass-border flex flex-col gap-unit p-gutter shadow-sm z-50">
+<div class="mb-8">
+<h1 class="font-display-lg text-headline-md text-aegean-blue">Vu Nguyen Trang</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Academic Portfolio</p>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 py-2 text-on-surface-variant pl-4 hover:text-aegean-blue transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-sm text-label-sm">Overview</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant pl-4 hover:text-aegean-blue transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant pl-4 hover:text-aegean-blue transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-label-sm text-label-sm">Learning Map</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant pl-4 hover:text-aegean-blue transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="font-label-sm text-label-sm">Assignments</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant pl-4 hover:text-aegean-blue transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">fact_check</span>
+<span class="font-label-sm text-label-sm">Evidence</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-olive-green font-bold border-l-4 border-sunflower-yellow pl-4" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">rule</span>
+<span class="font-label-sm text-label-sm">Rubric</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant pl-4 hover:text-aegean-blue transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="font-label-sm text-label-sm">Reflection</span>
+</a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-3 bg-sunflower-yellow text-aegean-blue font-bold rounded-lg scale-100 active:scale-95 transition-transform">
+                Contact Me
+            </button>
+</div>
+</aside>
+<!-- TopAppBar (Predicted) -->
+<header class="sticky top-0 z-40 w-full bg-glass-surface/60 backdrop-blur-xl border-b border-glass-border shadow-sm flex justify-between items-center h-16 px-margin-desktop ml-64">
+<span class="font-headline-md text-headline-md text-aegean-blue">Portfolio Index</span>
+<div class="flex items-center gap-gutter">
+<nav class="hidden md:flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">AY 2023-2024</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">Resources</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">Archive</a>
+</nav>
+<div class="flex gap-4">
+<button class="material-symbols-outlined text-aegean-blue focus:ring-2 focus:ring-sunflower-yellow rounded-full p-1">notifications</button>
+<button class="material-symbols-outlined text-aegean-blue focus:ring-2 focus:ring-sunflower-yellow rounded-full p-1">settings</button>
+</div>
+</div>
+</header>
+<main class="ml-64 p-margin-desktop space-y-section-gap-sm">
+<!-- Hero Section: Academic Evaluation Ledger -->
+<section class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 lg:col-span-8 glass-panel p-10 rounded-xl relative overflow-hidden flex flex-col justify-center min-h-[320px]">
+<div class="relative z-10">
+<span class="font-label-sm text-aegean-blue uppercase tracking-[0.2em] mb-4 block">Competency Standard</span>
+<h2 class="font-display-lg text-display-lg text-aegean-blue mb-2">Academic evaluation ledger</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">A comprehensive assessment matrix documenting milestones in curriculum mastery, professional development, and scholarly research impact.</p>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-aegean-blue/5 rounded-full blur-3xl"></div>
+<div class="absolute right-12 top-12 opacity-10">
+<span class="material-symbols-outlined text-[160px]">menu_book</span>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 glass-panel p-10 rounded-xl flex flex-col items-center justify-center text-center border-2 border-sunflower-yellow/30">
+<span class="font-label-sm text-olive-green uppercase tracking-widest mb-4">Current Readiness</span>
+<div class="relative">
+<span class="font-display-lg text-[120px] text-aegean-blue italic leading-none font-extrabold">100%</span>
+<div class="absolute -bottom-2 left-0 w-full h-1 bg-sunflower-yellow"></div>
+</div>
+<p class="mt-6 font-body-md text-on-surface-variant italic">Threshold for Professional Certification Met</p>
+</div>
+</section>
+<!-- Editorial Divider -->
+<div class="editorial-divider"></div>
+<!-- Rubric Table -->
+<section class="space-y-gutter">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-aegean-blue">Performance Indicators</h3>
+<p class="font-body-md text-on-surface-variant">Detailed mapping of learning outcomes and evidence quality.</p>
+</div>
+<div class="flex gap-2">
+<span class="px-4 py-1 rounded-full bg-olive-green/10 text-olive-green text-xs font-bold uppercase tracking-wider">Mastery Level</span>
+<span class="px-4 py-1 rounded-full bg-sunflower-yellow/20 text-aegean-blue text-xs font-bold uppercase tracking-wider italic">V 3.4 Archive</span>
+</div>
+</div>
+<!-- Custom Table Component -->
+<div class="glass-panel rounded-xl overflow-hidden shadow-sm">
+<!-- Table Header -->
+<div class="grid grid-cols-12 bg-aegean-blue/10 border-b border-glass-border">
+<div class="col-span-4 p-6 font-label-sm text-aegean-blue uppercase tracking-widest">Criterion</div>
+<div class="col-span-2 p-6 font-label-sm text-aegean-blue uppercase tracking-widest border-l border-glass-border">Emerging</div>
+<div class="col-span-2 p-6 font-label-sm text-aegean-blue uppercase tracking-widest border-l border-glass-border">Developing</div>
+<div class="col-span-2 p-6 font-label-sm text-aegean-blue uppercase tracking-widest border-l border-glass-border">Proficient</div>
+<div class="col-span-2 p-6 font-label-sm text-aegean-blue uppercase tracking-widest border-l border-glass-border bg-sunflower-yellow/10">Mastery</div>
+</div>
+<!-- Table Body Rows -->
+<div class="divide-y divide-glass-border">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 rubric-row transition-colors hover:bg-white/30 group">
+<div class="col-span-4 p-6 flex items-start gap-4">
+<div class="row-indicator opacity-0 w-1 h-12 bg-sunflower-yellow rounded-full transition-opacity"></div>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-2">Research Methodology</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2">Application of qualitative and quantitative paradigms in academic inquiry.</p>
+</div>
+</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Basic understanding of research tools.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Ability to apply frameworks to controlled datasets.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Consistent execution of complex methodology.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm bg-olive-green/5 flex flex-col justify-between">
+<p class="text-olive-green font-medium italic">Innovates new analytical frameworks for field advancement.</p>
+<span class="material-symbols-outlined text-olive-green mt-4" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 rubric-row transition-colors hover:bg-white/30 group">
+<div class="col-span-4 p-6 flex items-start gap-4">
+<div class="row-indicator opacity-0 w-1 h-12 bg-sunflower-yellow rounded-full transition-opacity"></div>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-2">Collaborative Leadership</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2">Directing cross-functional teams toward shared academic goals.</p>
+</div>
+</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Participates as a passive team member.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Leads small workgroups with supervision.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Manages project lifecycles independently.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm bg-olive-green/5 flex flex-col justify-between">
+<p class="text-olive-green font-medium italic">Mentors colleagues and shapes organizational strategy.</p>
+<span class="material-symbols-outlined text-olive-green mt-4" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 rubric-row transition-colors hover:bg-white/30 group">
+<div class="col-span-4 p-6 flex items-start gap-4">
+<div class="row-indicator opacity-0 w-1 h-12 bg-sunflower-yellow rounded-full transition-opacity"></div>
+<div>
+<h4 class="font-headline-md text-xl text-on-surface mb-2">Digital Literacy</h4>
+<p class="text-xs text-on-surface-variant line-clamp-2">Proficiency in emerging technological suites and computational ethics.</p>
+</div>
+</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Standard office suite proficiency.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Adopts new software with minimal training.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm text-on-surface-variant">Expertise in domain-specific digital tools.</div>
+<div class="col-span-2 p-6 border-l border-glass-border text-sm bg-olive-green/5 flex flex-col justify-between">
+<p class="text-olive-green font-medium italic">Authors custom scripts and digital workflows for optimization.</p>
+<span class="material-symbols-outlined text-olive-green mt-4" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Insights -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter pb-section-gap-sm">
+<div class="glass-panel p-8 rounded-xl">
+<div class="w-12 h-12 bg-aegean-blue/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-aegean-blue">history_edu</span>
+</div>
+<h5 class="font-headline-md text-lg mb-2">Cumulative Growth</h5>
+<p class="text-sm text-on-surface-variant">Track your progress from baseline assessment to current professional mastery levels.</p>
+<div class="mt-6 flex items-center gap-2 text-aegean-blue text-xs font-bold uppercase tracking-widest cursor-pointer hover:gap-4 transition-all">
+                    View Logs <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl border-t-4 border-sunflower-yellow">
+<div class="w-12 h-12 bg-sunflower-yellow/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-sunflower-yellow">verified</span>
+</div>
+<h5 class="font-headline-md text-lg mb-2">Evidence Validation</h5>
+<p class="text-sm text-on-surface-variant">All 'Mastery' scores are linked to peer-reviewed documentation and artifacts.</p>
+<div class="mt-6 flex items-center gap-2 text-aegean-blue text-xs font-bold uppercase tracking-widest cursor-pointer hover:gap-4 transition-all">
+                    Open Archive <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-xl">
+<div class="w-12 h-12 bg-olive-green/10 rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-olive-green">model_training</span>
+</div>
+<h5 class="font-headline-md text-lg mb-2">Next Milestone</h5>
+<p class="text-sm text-on-surface-variant">Preparation for Senior Academic Fellowship and Interdisciplinary Leadership.</p>
+<div class="mt-6 flex items-center gap-2 text-aegean-blue text-xs font-bold uppercase tracking-widest cursor-pointer hover:gap-4 transition-all">
+                    Roadmap <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Predicted) -->
+<footer class="bg-surface dark:bg-inverse-surface w-full py-8 border-t border-aegean-blue/20 flex flex-col md:flex-row justify-between items-center px-margin-desktop ml-64">
+<div class="mb-4 md:mb-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-olive-green">Vu Nguyen Trang</span>
+<p class="text-xs text-on-surface-variant mt-1">© 2024 Vu Nguyen Trang. All Rights Reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity opacity-100 font-label-sm text-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity opacity-100 font-label-sm text-label-sm" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity opacity-100 font-label-sm text-label-sm" href="#">ResearchGate</a>
+</div>
+</footer>
+<!-- Interactive script for glass panel subtle movement -->
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const panels = document.querySelectorAll('.glass-panel');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            panels.forEach(panel => {
+                const speed = 5;
+                const xOffset = (x - 0.5) * speed;
+                const yOffset = (y - 0.5) * speed;
+                panel.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assignments | Vu Nguyen Trang Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e5e2da",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#c3ed91",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-secondary-fixed": "#0f2000",
+                    "surface-container": "#f1eee6",
+                    "tertiary-container": "#cea700",
+                    "error-container": "#ffdad6",
+                    "glass-surface": "rgba(247, 244, 236, 0.6)",
+                    "santorini-white": "#F7F4EC",
+                    "surface": "#fcf9f1",
+                    "on-surface-variant": "#404751",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#aad37a",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#001d36",
+                    "surface-container-highest": "#e5e2da",
+                    "outline": "#717783",
+                    "outline-variant": "#c0c7d3",
+                    "inverse-on-surface": "#f3f1e9",
+                    "tertiary-fixed-dim": "#efc100",
+                    "on-primary-fixed-variant": "#00497e",
+                    "primary": "#005e9f",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#4e3d00",
+                    "surface-dim": "#dcdad2",
+                    "secondary-fixed": "#c5f094",
+                    "inverse-surface": "#31312b",
+                    "surface-tint": "#0061a5",
+                    "aegean-blue": "#0077C8",
+                    "surface-container-high": "#ebe8e0",
+                    "surface-bright": "#fcf9f1",
+                    "secondary": "#45681c",
+                    "primary-fixed": "#d2e4ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#fbfbff",
+                    "on-background": "#1c1c17",
+                    "on-secondary-container": "#496c20",
+                    "error": "#ba1a1a",
+                    "primary-container": "#0077c8",
+                    "tertiary": "#735c00",
+                    "tertiary-fixed": "#ffe085",
+                    "on-tertiary-fixed": "#231b00",
+                    "sunflower-yellow": "#F2C400",
+                    "inverse-primary": "#9fcaff",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#9fcaff",
+                    "glass-border": "rgba(255, 255, 255, 0.4)",
+                    "on-surface": "#1c1c17",
+                    "background": "#fcf9f1",
+                    "surface-container-low": "#f6f3eb",
+                    "on-secondary-fixed-variant": "#2e4f03",
+                    "olive-green": "#486B1F"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-lg": "120px",
+                    "section-gap-sm": "80px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "display-lg": ["EB Garamond"],
+                    "label-sm": ["Work Sans"],
+                    "body-md": ["Work Sans"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"],
+                    "body-lg": ["Work Sans"],
+                    "headline-lg-mobile": ["EB Garamond"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .iridescent-glass {
+            background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(200,230,255,0.2) 50%, rgba(255,255,255,0.4) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(0, 119, 200, 0.05);
+        }
+        .pulse-yellow {
+            animation: pulse-yellow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-yellow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: .7; transform: scale(1.1); }
+        }
+        .bg-mesh {
+            background-color: #F7F4EC;
+            background-image: 
+                radial-gradient(at 100% 0%, rgba(0, 119, 200, 0.12) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(72, 107, 31, 0.08) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-mesh min-h-screen text-on-surface font-body-md overflow-x-hidden">
+<!-- Sidebar Navigation -->
+<aside class="fixed left-0 top-0 h-full w-64 glass-panel bg-glass-surface/60 border-r border-glass-border flex flex-col gap-unit p-gutter z-50">
+<div class="mb-8">
+<h1 class="font-display-lg text-headline-md text-aegean-blue">Vu Nguyen Trang</h1>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-olive-green mt-1">Academic Portfolio</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 py-2 text-on-surface-variant hover:text-aegean-blue transition-colors pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm">Overview</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant hover:text-aegean-blue transition-colors pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant hover:text-aegean-blue transition-colors pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-label-sm text-label-sm">Learning Map</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-olive-green font-bold border-l-4 border-sunflower-yellow pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-label-sm text-label-sm">Assignments</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant hover:text-aegean-blue transition-colors pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span class="font-label-sm text-label-sm">Evidence</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant hover:text-aegean-blue transition-colors pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="rule">rule</span>
+<span class="font-label-sm text-label-sm">Rubric</span>
+</a>
+<a class="flex items-center gap-3 py-2 text-on-surface-variant hover:text-aegean-blue transition-colors pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-label-sm text-label-sm">Reflection</span>
+</a>
+</nav>
+<div class="mt-auto pt-8">
+<button class="w-full bg-sunflower-yellow text-aegean-blue font-bold py-3 px-6 rounded-lg scale-100 active:scale-95 transition-transform shadow-sm">
+                Contact Me
+            </button>
+</div>
+</aside>
+<!-- Top App Bar -->
+<header class="sticky top-0 z-40 w-full glass-panel bg-glass-surface/60 border-b border-glass-border flex justify-between items-center h-16 px-margin-desktop ml-64">
+<div class="flex items-center gap-8">
+<span class="font-headline-md text-headline-md text-aegean-blue">Portfolio Index</span>
+<div class="hidden md:flex gap-6">
+<a class="font-label-sm text-label-sm text-aegean-blue border-b-2 border-sunflower-yellow" href="#">AY 2023-2024</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">Resources</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-sunflower-yellow transition-colors" href="#">Archive</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-aegean-blue hover:text-sunflower-yellow transition-colors" data-icon="notifications">notifications</button>
+<button class="material-symbols-outlined text-aegean-blue hover:text-sunflower-yellow transition-colors" data-icon="settings">settings</button>
+<div class="w-8 h-8 rounded-full bg-aegean-blue/10 border border-aegean-blue/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of Vu Nguyen Trang, a young academic researcher with a serene and focused expression. The lighting is soft and high-key, reflecting a minimalist Mediterranean aesthetic. She is wearing professional attire against a clean Santorini-white background. The overall mood is authoritative yet welcoming, fitting for an academic portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV4HFwCf7kaqcd4U73ef1ROhvAaInWyiNr1sKUYgVhfeckoaf3OkqjbPoxn38caokGVL93VYH7Bprgas7cREh3Q7wz2bHojmc_Nf-CgjhDe0GHjGbOqgFr9XWnbo7VdDtaSaqauKN9okg7DUFYR8fKcQ2cD8VjLV_PoNVa-oMvF-N8ARcdS9sM_B5TW7QTOx9zhZQ6Hpf_EUOw4Ds0tS1Su85RsV59ycLMPC8lU08HinZWoJy8jabueRa6qcmtW5-rPSGFEF72l6X1"/>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="ml-64 p-margin-desktop">
+<!-- Page Header -->
+<section class="mb-section-gap-sm">
+<div class="max-w-3xl">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-olive-green mb-4">Curated Portfolio Archive</p>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-6">Coursework &amp; <span class="text-aegean-blue italic">Assignments</span></h2>
+<div class="flex items-center gap-4 py-4 border-y border-aegean-blue/20">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-sunflower-yellow rounded-full pulse-yellow"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 In Progress</span>
+</div>
+<div class="w-px h-4 bg-aegean-blue/20"></div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 bg-aegean-blue rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Completed</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid for Assignments -->
+<section class="grid grid-cols-12 gap-gutter">
+<!-- Assignment 01: Large Highlight -->
+<div class="col-span-12 lg:col-span-8 group">
+<div class="iridescent-glass rounded-xl p-8 h-full flex flex-col relative overflow-hidden transition-all duration-500 hover:translate-y-[-4px]">
+<div class="absolute top-0 right-0 w-32 h-32 bg-aegean-blue/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="flex justify-between items-start mb-12">
+<span class="font-label-sm text-label-sm text-aegean-blue/60">CHAPTER 01</span>
+<span class="bg-aegean-blue/10 text-aegean-blue px-3 py-1 rounded-full font-label-sm text-label-sm">COMPLETED</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Cognitive Foundations of Learning</h3>
+<p class="text-on-surface-variant mb-8 max-w-xl">An in-depth exploration of neural plasticity and its implications for lifelong education in the digital age. This assignment synthesized three months of research into a comprehensive theoretical framework.</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a scientific journal page with handwritten annotations and a vintage pen resting on top. The lighting is bright and airy, capturing a sophisticated academic mood. Santorini-white tones dominate the scene with subtle Aegean blue ink highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFjpBtoG6FMHoB1Mm0qX0fZ0FWg51_6t8fUZBT9AxEil5XIJtyRPPlUG6aouwWF6_QGVGLemxgtI5BX17VzmX-HQ9kulKFGygd8AXh7MX1pjuiiwxrOt7xJaRTWdmZx4lXCrSwnQaFonw_KhmsCTIGr_E5rB08-OviaojrY9uxvXKUV0CRKYgo5xGt47nNuF1dCnR_YAWvUk_nxvTDfZjHAQFlckQXhJ4AtBqQjbLDzzbo4-MzLI55x88qcuteUKoDOL4rZCLxAmy3"/>
+</div>
+</div>
+<a class="flex items-center gap-2 text-aegean-blue font-bold group" href="#">
+<span class="font-label-sm text-label-sm">VIEW DETAILS</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Assignment 02: Vertical In-Progress -->
+<div class="col-span-12 lg:col-span-4">
+<div class="iridescent-glass rounded-xl p-8 h-full flex flex-col border-sunflower-yellow/30 bg-sunflower-yellow/[0.02]">
+<div class="flex justify-between items-start mb-8">
+<span class="font-label-sm text-label-sm text-olive-green">CHAPTER 02</span>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-sunflower-yellow rounded-full pulse-yellow"></span>
+<span class="text-sunflower-yellow font-bold text-label-sm font-label-sm">IN PROGRESS</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Research Methodology: Qualitative Drift</h3>
+<p class="text-on-surface-variant mb-6">Analyzing the shift in modern sociological studies towards digital ethnography.</p>
+<div class="mt-auto space-y-4">
+<div class="h-1 w-full bg-aegean-blue/10 rounded-full overflow-hidden">
+<div class="h-full bg-sunflower-yellow w-[65%]"></div>
+</div>
+<div class="flex justify-between text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Progress</span>
+<span class="text-aegean-blue">65%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Assignment 03: Small Square -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4">
+<div class="iridescent-glass rounded-xl p-6 h-full hover:bg-white/40 transition-colors">
+<span class="font-label-sm text-label-sm text-aegean-blue/60 mb-4 block">CHAPTER 03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Applied Statistics for Social Sciences</h3>
+<div class="flex items-center gap-2 text-olive-green mb-4">
+<span class="material-symbols-outlined text-[18px]" data-icon="task_alt">task_alt</span>
+<span class="text-label-sm font-label-sm">Grade: A+</span>
+</div>
+<div class="flex gap-2 flex-wrap">
+<span class="bg-olive-green/10 text-olive-green px-2 py-0.5 rounded-full text-[10px] font-bold">R-STUDIO</span>
+<span class="bg-olive-green/10 text-olive-green px-2 py-0.5 rounded-full text-[10px] font-bold">DATA VIZ</span>
+</div>
+</div>
+</div>
+<!-- Assignment 04: Visual Card -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 overflow-hidden group">
+<div class="iridescent-glass rounded-xl h-full flex flex-col">
+<div class="h-40 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist architectural photograph of a modern university library in Greece. The image features clean white geometric lines against a vibrant Aegean blue sky. Sharp shadows and bright sunlight create a high-contrast, editorial aesthetic consistent with a premium academic portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp9SLlncHv8R1gywyaO_3toey_fMKQJx_hkC6Uu5en5_jE-Djgmdtmq-iYKPzy0rnu2YzkSKKzNgqg9WdecYkV9-nwLDFeqXFJ77dtLElCAYBMRQgDHMtVMH-dG2qLUf6yRzdKY8hgEfgRqG31wD5SkcDuqosxxcMRDRZrzAg5GSIQrz0QfdQ0bXx-0DipGQQLkG0D6rt-MOUM4TNGqfIokw7ELPt-3NjB30MMeqJWnCoCwc76Q77PGs4aOeYgMeQU1c_2FIzRPhfe"/>
+</div>
+<div class="p-6">
+<span class="font-label-sm text-label-sm text-aegean-blue/60 mb-2 block">CHAPTER 04</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Ethics in Artificial Intelligence</h3>
+<p class="text-on-surface-variant text-sm mt-2 line-clamp-2">Exploring the philosophical foundations of machine ethics and human-in-the-loop systems.</p>
+</div>
+</div>
+</div>
+<!-- Assignment 05: Minimal Text -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4">
+<div class="iridescent-glass rounded-xl p-8 flex flex-col justify-center border-dashed border-2 border-aegean-blue/20">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-sunflower-yellow" data-icon="pending">pending</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CHAPTER 05</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Policy Brief: Sustainable Campus Life</h3>
+<p class="text-on-surface-variant text-sm mt-2 italic">Scheduled for next semester submission.</p>
+</div>
+</div>
+<!-- Assignment 06: Full Width Decorative -->
+<div class="col-span-12">
+<div class="iridescent-glass rounded-xl p-10 flex flex-col md:flex-row gap-8 items-center justify-between">
+<div class="md:max-w-xl">
+<span class="font-label-sm text-label-sm text-aegean-blue/60 mb-4 block">CHAPTER 06</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Thesis: Digital Identity Paradox</h3>
+<p class="text-on-surface-variant">The culmination of the academic year, focusing on the intersection of privacy, social media, and adolescent development.</p>
+</div>
+<div class="flex-shrink-0">
+<button class="bg-aegean-blue text-white px-8 py-4 rounded-lg font-bold flex items-center gap-3 hover:bg-aegean-blue/90 transition-all shadow-lg hover:shadow-aegean-blue/20">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+<span>Download Full Proposal</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider with Dot -->
+<div class="relative py-section-gap-sm flex items-center justify-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-aegean-blue/20"></div>
+</div>
+<div class="relative w-2 h-2 bg-sunflower-yellow rounded-full z-10 shadow-[0_0_10px_rgba(242,196,0,0.5)]"></div>
+</div>
+<!-- Footer -->
+<footer class="w-full py-8 border-t border-aegean-blue/20 flex flex-col md:flex-row justify-between items-center bg-transparent">
+<div class="mb-4 md:mb-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-olive-green">Vu Nguyen Trang</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">© 2024 Vu Nguyen Trang. All Rights Reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-aegean-blue transition-opacity" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-aegean-blue transition-opacity" href="#">GitHub</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-aegean-blue transition-opacity" href="#">ResearchGate</a>
+</div>
+</footer>
+</main>
+<!-- Floating Action Button - Supressed as per 'Relevance Check' -->
+<script>
+        // Micro-interactions for glass panels
+        document.querySelectorAll('.iridescent-glass').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+                
+                // Subtle shine effect on movement
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 25;
+                const rotateY = (centerX - x) / 25;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+            });
+        });
+    </script>
+</body></html>

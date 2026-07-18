@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evidence - Vu Nguyen Trang Academic Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e5e2da",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#c3ed91",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-secondary-fixed": "#0f2000",
+                        "surface-container": "#f1eee6",
+                        "tertiary-container": "#cea700",
+                        "error-container": "#ffdad6",
+                        "glass-surface": "rgba(247, 244, 236, 0.6)",
+                        "santorini-white": "#F7F4EC",
+                        "surface": "#fcf9f1",
+                        "on-surface-variant": "#404751",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#aad37a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001d36",
+                        "surface-container-highest": "#e5e2da",
+                        "outline": "#717783",
+                        "outline-variant": "#c0c7d3",
+                        "inverse-on-surface": "#f3f1e9",
+                        "tertiary-fixed-dim": "#efc100",
+                        "on-primary-fixed-variant": "#00497e",
+                        "primary": "#005e9f",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#4e3d00",
+                        "surface-dim": "#dcdad2",
+                        "secondary-fixed": "#c5f094",
+                        "inverse-surface": "#31312b",
+                        "surface-tint": "#0061a5",
+                        "aegean-blue": "#0077C8",
+                        "surface-container-high": "#ebe8e0",
+                        "surface-bright": "#fcf9f1",
+                        "secondary": "#45681c",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#fbfbff",
+                        "on-background": "#1c1c17",
+                        "on-secondary-container": "#496c20",
+                        "error": "#ba1a1a",
+                        "primary-container": "#0077c8",
+                        "tertiary": "#735c00",
+                        "tertiary-fixed": "#ffe085",
+                        "on-tertiary-fixed": "#231b00",
+                        "sunflower-yellow": "#F2C400",
+                        "inverse-primary": "#9fcaff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#9fcaff",
+                        "glass-border": "rgba(255, 255, 255, 0.4)",
+                        "on-surface": "#1c1c17",
+                        "background": "#fcf9f1",
+                        "surface-container-low": "#f6f3eb",
+                        "on-secondary-fixed-variant": "#2e4f03",
+                        "olive-green": "#486B1F"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-lg": "120px",
+                        "section-gap-sm": "80px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["EB Garamond"],
+                        "label-sm": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "headline-md": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "body-lg": ["Work Sans"],
+                        "headline-lg-mobile": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "label-sm": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .aura-glow {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .aura-blue { background: radial-gradient(circle, #0077C8 0%, transparent 70%); top: -200px; right: -200px; }
+        .aura-green { background: radial-gradient(circle, #486B1F 0%, transparent 70%); bottom: -200px; left: -200px; }
+        
+        body {
+            background-color: #F7F4EC;
+            color: #1c1c17;
+            overflow-x: hidden;
+        }
+
+        .glass-panel {
+            background: rgba(247, 244, 236, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #0077C8; border-radius: 10px; }
+    </style>
+</head>
+<body class="font-body-md selection:bg-sunflower-yellow selection:text-aegean-blue">
+<!-- Background Auras -->
+<div class="aura-glow aura-blue"></div>
+<div class="aura-glow aura-green"></div>
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-64 bg-glass-surface/60 backdrop-blur-xl border-r border-glass-border shadow-sm flex flex-col gap-unit p-gutter z-[60]">
+<div class="mb-8">
+<div class="font-display-lg text-headline-md text-aegean-blue">Vu Nguyen Trang</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-1">Academic Portfolio</div>
+</div>
+<div class="flex flex-col gap-2 flex-grow">
+<!-- Navigation Items mapped from JSON -->
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:bg-white/10 transition-colors duration-300 pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-body-md">Overview</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:bg-white/10 transition-colors duration-300 pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-body-md">Profile</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:bg-white/10 transition-colors duration-300 pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-body-md">Learning Map</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:bg-white/10 transition-colors duration-300 pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-body-md">Assignments</span>
+</a>
+<!-- Active State: Evidence -->
+<a class="flex items-center gap-3 py-3 text-olive-green font-bold border-l-4 border-sunflower-yellow pl-4 bg-white/5" href="#">
+<span class="material-symbols-outlined" data-icon="fact_check">fact_check</span>
+<span class="font-body-md">Evidence</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:bg-white/10 transition-colors duration-300 pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="rule">rule</span>
+<span class="font-body-md">Rubric</span>
+</a>
+<a class="flex items-center gap-3 py-3 text-on-surface-variant hover:bg-white/10 transition-colors duration-300 pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-body-md">Reflection</span>
+</a>
+</div>
+<button class="mt-auto w-full bg-sunflower-yellow text-aegean-blue font-bold py-4 rounded-xl shadow-md transition-transform active:scale-95 hover:brightness-105">
+            Contact Me
+        </button>
+</nav>
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 w-full bg-glass-surface/60 backdrop-blur-xl border-b border-glass-border shadow-sm flex justify-between items-center h-16 px-margin-desktop ml-64">
+<div class="font-headline-md text-headline-md text-aegean-blue">Portfolio Index</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex gap-6">
+<a class="text-on-surface-variant hover:text-sunflower-yellow transition-colors font-label-sm" href="#">AY 2023-2024</a>
+<a class="text-on-surface-variant hover:text-sunflower-yellow transition-colors font-label-sm" href="#">Resources</a>
+<a class="text-on-surface-variant hover:text-sunflower-yellow transition-colors font-label-sm" href="#">Archive</a>
+</nav>
+<div class="flex gap-4">
+<button class="p-2 text-aegean-blue hover:bg-white/20 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-aegean-blue hover:bg-white/20 rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="ml-64 p-margin-desktop min-h-screen">
+<!-- Header Section -->
+<section class="mb-section-gap-sm">
+<h1 class="font-display-lg text-display-lg text-aegean-blue mb-4">Evidence &amp; Artifacts</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                A comprehensive collection of academic validation, research papers, and collaborative projects demonstrating my growth throughout the academic year.
+            </p>
+<div class="flex items-center gap-4 mt-8">
+<div class="flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-santorini-white bg-aegean-blue/10 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional close-up portrait of a university professor with a kind expression, set in a bright, modern office with soft sunlight filtering through windows. The lighting is crisp and the aesthetic is clean and academic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwb1i5jA34J4P_bXiQVCY6gPkp0xzikjYulNG7SOtPMH3jcPONnvbb6nQNLbL24-7L1boAMp_maJ6SzegzVSWEkBr8blUuZDtxw6-4M_5NryBBlO55TE9wF7xtYMDBeeDViVQdqdiGUGsnC7LZCkzjXxUy9G3tqXFNHIJpNHpLf3sZIu4JDAmJTdzZxqegHZ9akfw1pYsZaKEi0_zM1FX0DN61IlYEToAfB2WdKGtwl5-H-mce8-zT79kFPShJORp7LU-YQeh8RzkC"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-santorini-white bg-olive-green/10 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A high-quality close-up of a diverse academic peer smiling, with a blurred background of a minimalist library. Soft, natural lighting and a high-end editorial feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg_hzefKs2VK-GRFFF4qS19YIRdGs_cWZceLNniDQdCdPvEEdwTqL1BQvnI-IMMgUq-iT8hTSPvEuuSBSGOhWtwlC3sKO9yiQGzljbvxJvXNlRT2y9Wzl3HylJR6KC21qBWKOXSXGIJ89WtnSyH5Bi_cj_8YTkntMmbyXtdaZRS0P2j4IIMC6qsDnFyNohtiHue5d6qzUCUlb-sl40p_WNNzav8Qd2bG4RiSfstG4Py0UtARbAnqcHmvxjDPDG0chmaP-NJ2MK9e6p"/>
+</div>
+</div>
+<span class="text-on-surface-variant font-label-sm">Verified by 12 Faculty Members</span>
+</div>
+</section>
+<!-- Artifacts Table Panel -->
+<section class="mb-section-gap-sm">
+<div class="glass-panel rounded-xl overflow-hidden">
+<div class="p-6 border-b border-aegean-blue/20 flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md text-aegean-blue">Documentation Registry</h2>
+<div class="flex gap-2">
+<button class="flex items-center gap-2 px-4 py-2 border border-aegean-blue text-aegean-blue rounded-lg font-label-sm hover:bg-aegean-blue/5 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="filter_list">filter_list</span> Filter
+                        </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-aegean-blue text-white rounded-lg font-label-sm hover:brightness-110 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span> New Artifact
+                        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-aegean-blue/5">
+<th class="p-6 font-label-sm text-aegean-blue uppercase tracking-wider">Artifact Name</th>
+<th class="p-6 font-label-sm text-aegean-blue uppercase tracking-wider">Category</th>
+<th class="p-6 font-label-sm text-aegean-blue uppercase tracking-wider">Status</th>
+<th class="p-6 font-label-sm text-aegean-blue uppercase tracking-wider">Last Updated</th>
+<th class="p-6 font-label-sm text-aegean-blue uppercase tracking-wider">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-aegean-blue/10">
+<!-- Row 1 -->
+<tr class="hover:bg-white/10 transition-colors group">
+<td class="p-6">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface group-hover:text-aegean-blue transition-colors">Strategic Marketing Analysis - Final Report</span>
+<span class="text-on-surface-variant text-sm">PDF Document (12.4 MB)</span>
+</div>
+</td>
+<td class="p-6">
+<span class="inline-block px-3 py-1 bg-olive-green/15 text-olive-green text-xs font-bold rounded-full uppercase tracking-tighter">Research</span>
+</td>
+<td class="p-6">
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-aegean-blue/10 text-aegean-blue text-xs font-bold rounded-full">
+<span class="w-2 h-2 rounded-full bg-aegean-blue"></span> Đã nộp
+                                    </span>
+</td>
+<td class="p-6 text-on-surface-variant">Nov 24, 2023</td>
+<td class="p-6">
+<button class="text-aegean-blue hover:underline font-label-sm">View Details</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-white/10 transition-colors group">
+<td class="p-6">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface group-hover:text-aegean-blue transition-colors">Brand Identity Guidelines - Mediterranean Style</span>
+<span class="text-on-surface-variant text-sm">Figma Project &amp; Assets</span>
+</div>
+</td>
+<td class="p-6">
+<span class="inline-block px-3 py-1 bg-olive-green/15 text-olive-green text-xs font-bold rounded-full uppercase tracking-tighter">Design</span>
+</td>
+<td class="p-6">
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-sunflower-yellow/20 text-on-tertiary-container text-xs font-bold rounded-full">
+<span class="w-2 h-2 rounded-full bg-sunflower-yellow"></span> Chờ nộp
+                                    </span>
+</td>
+<td class="p-6 text-on-surface-variant">Dec 02, 2023</td>
+<td class="p-6">
+<button class="text-aegean-blue hover:underline font-label-sm">Edit Submission</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-white/10 transition-colors group">
+<td class="p-6">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface group-hover:text-aegean-blue transition-colors">Microeconomics Policy Brief</span>
+<span class="text-on-surface-variant text-sm">Word Document</span>
+</div>
+</td>
+<td class="p-6">
+<span class="inline-block px-3 py-1 bg-olive-green/15 text-olive-green text-xs font-bold rounded-full uppercase tracking-tighter">Economic Theory</span>
+</td>
+<td class="p-6">
+<span class="inline-flex items-center gap-1 px-3 py-1 bg-aegean-blue/10 text-aegean-blue text-xs font-bold rounded-full">
+<span class="w-2 h-2 rounded-full bg-aegean-blue"></span> Đã nộp
+                                    </span>
+</td>
+<td class="p-6 text-on-surface-variant">Oct 15, 2023</td>
+<td class="p-6">
+<button class="text-aegean-blue hover:underline font-label-sm">View Details</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Bento Grid Section -->
+<section>
+<h3 class="font-headline-lg text-headline-lg text-aegean-blue mb-8">Visual Evidence Highlights</h3>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-gutter h-[600px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 md:row-span-2 glass-panel rounded-xl p-0 overflow-hidden relative group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A wide, cinematic shot of an elegant white architecture in Santorini overlooking the deep blue Aegean sea. The lighting is golden hour, warm and vibrant. Minimalist architectural lines and clear crisp air define the mood. This image captures the essence of sophisticated Mediterranean design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbV69kTIXp8QnAHDBXE5vbNH6Xd7iCgINS4OhYT_XxBiN2fLBPo7LJBfzd-Rpr1hbckuxfQOwkssCv7J7TgFT5orVvIWfc8_JGMyCilePJXfgKmTL01sj61bTZN1LgM_02xxRz2DkKJ43KUtKj6EG73BPM9kfRIf2XDeBFwA8snzzUIPjxLv5KJgDcjjUB3fT458xrdkJVEH1ghmtOk59lZjps9aIozp1g-6QSAxgQOsy9Zb4Gi2hhRirnetcv3tOOjlbdo5HgkcV5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-aegean-blue/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="font-label-sm text-sunflower-yellow mb-2">Featured Project</span>
+<h4 class="font-display-lg text-white text-3xl mb-2 leading-tight">Coastal Urbanism: Santorini Reimagined</h4>
+<p class="text-white/80 font-body-md text-sm line-clamp-2">A deep dive into sustainable architecture for coastal tourism in Greece.</p>
+</div>
+</div>
+<!-- Smaller Grid Items -->
+<div class="glass-panel rounded-xl p-0 overflow-hidden relative group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A macro shot of architectural blueprints laid out on a polished white marble desk. Beside them is a high-end designer pen and a small ceramic bowl. The scene is illuminated by bright, natural daylight. High-end, clean, and professional aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9P-3h1Gdz1kczz277uCdpu4TKeSSYh3qxZ3xaWC2eWqAm5ltLsGpcH5g7lJ6yNdPHL0MlxymyVjxc801UN6z9NNeqadiD9h96U9bsc2n4CuJRZWm6RC_FXVxbCX1z0ZxTijNoCtsQHhgQGmIJK4f_zac5_g0rZ5Ll4zVgozPp55tatrLmzZIdoOxOWv-hJYWzLk0jnxDez1ZHAaRvd6JKUb01h46MZhiS7W5k3QbzaLG4cfUBN6xLS90TX-59gSp0hhUa_EvGegwu"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-aegean-blue/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="search">search</span>
+</div>
+</div>
+<div class="glass-panel rounded-xl p-0 overflow-hidden relative group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist presentation deck displayed on a sleek, thin-bezel laptop. The slides feature sophisticated Mediterranean blue and sunflower yellow accent colors. The desk is white and clean, with a small potted olive plant in the background. Calm, authoritative atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUPTliedwUJ1CN635LSiMfQabg98EChU-JKt9nUcsE-uxLM4CG7yBW0bohloaI4wl8qPrpmKEBeu6dBXBNWdvlUXF9Jg2Se3AdGTtuMdXiIXqAYCJH0C6sDLRUHUMLSFNMZoUccHuuzjUxIxcU6tSTqbc6T5GCJbKq0QUhRx37vu5eoDvQV19TIBMJwW_RaVC4CaOEgVwLfJziW0K6edRYVwTz8irx3St3V214ANEXJiN98fqnyy2m0l5UTMpZiUYkJDDYgTKQisE-"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-aegean-blue/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="visibility">visibility</span>
+</div>
+</div>
+<div class="md:col-span-2 glass-panel rounded-xl p-8 flex flex-col justify-center border-l-4 border-sunflower-yellow">
+<div class="flex items-center gap-4 mb-4">
+<div class="p-3 bg-aegean-blue/10 rounded-lg text-aegean-blue">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+</div>
+<h5 class="font-headline-md text-aegean-blue">Analytical Summary</h5>
+</div>
+<p class="text-on-surface-variant">Over 1,200 data points collected during the field study phase across four distinct coastal sites.</p>
+<div class="mt-6 flex items-center gap-6">
+<div>
+<div class="text-2xl font-bold text-aegean-blue">94%</div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant font-label-sm">Accuracy</div>
+</div>
+<div class="w-px h-8 bg-aegean-blue/20"></div>
+<div>
+<div class="text-2xl font-bold text-olive-green">14</div>
+<div class="text-xs uppercase tracking-widest text-on-surface-variant font-label-sm">Case Studies</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-8 border-t border-aegean-blue/20 bg-surface flex flex-col md:flex-row justify-between items-center px-margin-desktop ml-64">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-olive-green mb-4 md:mb-0">
+            Vu Nguyen Trang Portfolio
+        </div>
+<div class="text-on-surface-variant font-body-md text-sm">
+            © 2024 Vu Nguyen Trang. All Rights Reserved.
+        </div>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity font-label-sm" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity font-label-sm" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-aegean-blue transition-opacity font-label-sm" href="#">ResearchGate</a>
+</div>
+</footer>
+<!-- Micro-interactions Script -->
+<script>
+        // Subtle aura movement on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const blueAura = document.querySelector('.aura-blue');
+            const greenAura = document.querySelector('.aura-green');
+            
+            const x = (e.clientX / window.innerWidth - 0.5) * 50;
+            const y = (e.clientY / window.innerHeight - 0.5) * 50;
+            
+            blueAura.style.transform = `translate(${x}px, ${y}px)`;
+            greenAura.style.transform = `translate(${-x}px, ${-y}px)`;
+        });
+
+        // Interactive highlights for table rows
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.backdropFilter = 'blur(40px) brightness(1.05)';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.backdropFilter = 'blur(20px)';
+            });
+        });
+    </script>
+</body></html>
