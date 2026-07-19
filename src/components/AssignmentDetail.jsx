@@ -21,17 +21,29 @@ export default function AssignmentDetail({ project, onBack, previewData, onPrevi
         <div className="grid gap-px bg-primary/10 lg:grid-cols-2">
           <section className="bg-white/25 p-7 backdrop-blur-xl lg:p-10">
             <p className="editorial-label">Mục tiêu nhiệm vụ</p>
-            <p className="mt-6 text-base leading-8">{project.target}</p>
+            <p className="mt-6 whitespace-pre-line text-base leading-8">{project.target}</p>
           </section>
           <section className="bg-secondary/5 p-7 backdrop-blur-xl lg:p-10">
             <p className="editorial-label">Kỹ năng áp dụng</p>
-            <p className="mt-6 text-base italic leading-8">{project.skills?.join(', ')}</p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {project.skills?.map((skill) => (
+                <span key={skill} className="rounded-full border border-secondary/20 bg-secondary/10 px-3.5 py-1.5 text-xs font-semibold text-secondary">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </section>
         </div>
         <section className="border-t border-primary/10 p-7 lg:p-12">
-          <p className="editorial-label">Quá trình thực hiện</p>
-          <p className="mt-7 max-w-4xl text-base leading-8">{project.process}</p>
+          <p className="editorial-label">Tóm tắt &amp; Quá trình thực hiện</p>
+          <p className="mt-7 max-w-4xl whitespace-pre-line text-base leading-8">{project.process}</p>
         </section>
+        {project.result && (
+          <section className="border-t border-primary/10 bg-white/20 p-7 backdrop-blur-xl lg:p-12">
+            <p className="editorial-label">Kết quả &amp; Kết luận</p>
+            <p className="mt-7 max-w-4xl whitespace-pre-line text-base leading-8 text-primary">{project.result}</p>
+          </section>
+        )}
         <section className="border-t border-primary/10 p-7 lg:p-12">
           <p className="editorial-label">Sản phẩm học phần</p>
           <div className="mt-6">

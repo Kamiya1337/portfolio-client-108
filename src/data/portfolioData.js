@@ -22,67 +22,131 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "Bài 1: Máy tính và quản lý tệp/thư mục",
-      chapter: "Chương 1 & 2",
-      shortDesc: "Tổ chức không gian làm việc số và thiết lập quy tắc quản lý dữ liệu cá nhân.",
-      skills: ["Quản lý hệ điều hành", "Tổ chức dữ liệu", "Lưu trữ đám mây"],
-      target: "Trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên tệp đã thiết lập.",
-      process: "Phân tích nhu cầu lưu trữ học tập, thiết lập cây thư mục theo môn học/kỳ học. Áp dụng quy tắc đặt tên file không dấu, dùng gạch dưới để dễ dàng tìm kiếm. Đồng bộ hóa với Google Drive.",
+      title: "Bài 1: Thao tác cơ bản với tệp tin và thư mục",
+      chapter: "Chương 1",
+      shortDesc: "Thực hiện các thao tác quản lý tệp tin, thư mục và thiết lập thói quen tổ chức dữ liệu học tập khoa học.",
+      skills: ["File Explorer", "Tổ chức dữ liệu", "Phím tắt hệ thống", "Sao lưu & Khôi phục"],
+      target: `• Thực hiện thành thạo các thao tác cơ bản với tệp tin và thư mục: Tạo mới, đổi tên, sao chép, di chuyển, xóa, khôi phục và sao lưu dữ liệu.
+• Xây dựng thói quen tổ chức dữ liệu học tập khoa học và có hệ thống.
+• Áp dụng quy tắc đặt tên tệp rõ ràng, thống nhất để dễ dàng tìm kiếm, hạn chế nhầm lẫn phiên bản và giảm nguy cơ thất lạc dữ liệu.`,
+      process: `[Công cụ sử dụng]: File Explorer, Recycle Bin, hệ thống ổ đĩa và các tổ hợp phím tắt trên bàn phím.
+
+[Quá trình thực hiện]:
+• Truy cập File Explorer và xác định vị trí các ổ đĩa.
+• Tạo hệ thống thư mục, thư mục con và tệp tin theo yêu cầu học phần.
+• Thực hiện các thao tác: Đổi tên, Sao chép, Di chuyển, Xóa và Khôi phục tệp.
+• Sử dụng phím tắt để nâng cao tốc độ thao tác.
+• Ghi lại từng bước bằng ảnh chụp màn hình làm minh chứng thực hành.`,
+      result: `• Phân biệt được chức năng của thao tác sao chép, di chuyển, xóa và khôi phục.
+• Hiểu sâu sắc vai trò của việc tổ chức thư mục và đặt tên tệp khoa học.
+• Nhận thức được đây là kỹ năng nền tảng giúp sinh viên quản lý tài liệu hiệu quả và hạn chế rủi ro mất dữ liệu.`,
       report: "/docs/bai-1.pdf",
       status: "Hoàn Thành"
     },
     {
       id: 2,
-      title: "Bài 2: Khai thác dữ liệu và đánh giá thông tin",
+      title: "Bài 2: Tìm kiếm và đánh giá thông tin học thuật",
       chapter: "Chương 2",
-      shortDesc: "Áp dụng toán tử tìm kiếm nâng cao và đánh giá nguồn tin học thuật.",
-      skills: ["Toán tử tìm kiếm", "Đánh giá CRAAP", "Phân tích tin giả"],
-      target: "Trình bày kết quả tìm kiếm học thuật bằng các toán tử nâng cao và bảng đánh giá nguồn tin.",
-      process: "Sử dụng Google Scholar kết hợp các toán tử (AND, OR, filetype:pdf) để tìm tài liệu về thiết kế vi mạch. Lọc và đánh giá 3 nguồn tài liệu dựa trên 5 tiêu chí CRAAP (Độ mới, Mức độ phù hợp, Thẩm quyền, Độ chính xác, Mục đích).",
+      shortDesc: "Khai thác tài liệu học thuật đáng tin cậy và đánh giá chất lượng nguồn tin theo mô hình CRAAP.",
+      skills: ["Google Scholar", "Mô hình CRAAP", "Trích dẫn Harvard", "Đánh giá tin học thuật"],
+      target: `• Phát triển kỹ năng tìm kiếm tài liệu học thuật từ các nguồn đáng tin cậy; biết cách đánh giá chất lượng và độ tin cậy của thông tin.
+• Hạn chế sử dụng nguồn không rõ tác giả, dữ liệu thiếu kiểm chứng và tài liệu không phù hợp với mục tiêu nghiên cứu.
+• Rèn luyện năng lực tổng hợp và trích dẫn tài liệu chuẩn mực trong học tập.`,
+      process: `[Chủ đề & Phạm vi]: "Ảnh hưởng của trí tuệ nhân tạo đối với ngôn ngữ học" (Ứng dụng, tác động tích cực và hạn chế của AI). Sử dụng từ khóa tiếng Anh làm nguồn tìm kiếm chính, kết hợp từ khóa tiếng Việt tham khảo.
+
+[Quá trình thực hiện]:
+• Thu thập 10 tài liệu từ 4 nhóm nguồn: Google Scholar, Tạp chí khoa học chuyên ngành, Sách chuyên khảo và Nguồn truy cập mở.
+• Đánh giá từng tài liệu theo mô hình CRAAP: Currency (Tính cập nhật), Relevance (Mức độ liên quan), Accuracy (Độ chính xác), Authority (Thẩm quyền học thuật), Purpose (Mục đích công bố).
+• Tổng hợp kết quả vào bảng đánh giá và xếp hạng mức độ tin cậy theo thang điểm 1-10.`,
+      result: `• Xác định được các yếu tố cốt lõi tạo nên một nguồn thông tin học thuật đáng tin cậy.
+• Phân biệt rõ tài liệu học thuật chuẩn mực với các nguồn thông tin thiếu căn cứ.
+• Hoàn thiện danh mục tài liệu tham khảo theo định dạng Harvard.
+• Rút ra nguyên tắc: Nguồn tài liệu cần có tác giả rõ ràng, nội dung phù hợp, phương pháp minh bạch và dữ liệu có thể kiểm chứng.`,
       report: "/docs/bai-2.pdf",
       status: "Hoàn Thành"
     },
     {
       id: 3,
-      title: "Bài 3: Viết prompt hiệu quả và sử dụng AI",
+      title: "Bài 3: Xây dựng và tối ưu hóa Prompt",
       chapter: "Chương 3",
-      shortDesc: "Kỹ thuật giao tiếp với mô hình ngôn ngữ lớn (LLMs).",
-      skills: ["Prompt Engineering", "Tư duy phân tích", "Sử dụng GenAI"],
-      target: "So sánh giữa Prompt ban đầu và Prompt cải tiến cùng kết quả đầu ra từ AI.",
-      process: "Thiết lập cấu trúc prompt bao gồm: Vai trò (Role), Ngữ cảnh (Context), Nhiệm vụ (Task) và Định dạng đầu ra (Format). Thử nghiệm nhờ AI giải thích một khái niệm vật lý bán dẫn và so sánh kết quả trước/sau khi tối ưu prompt.",
+      shortDesc: "Viết prompt rõ ràng, có cấu trúc và áp dụng các kỹ thuật prompting từ cơ bản đến nâng cao với AI.",
+      skills: ["Prompt Engineering", "Kỹ thuật Prompting", "Khai thác ChatGPT/LLMs", "Đánh giá Output AI"],
+      target: `• Phát triển kỹ năng viết prompt rõ ràng, có cấu trúc và đầy đủ ngữ cảnh; áp dụng các kỹ thuật prompting từ cơ bản đến nâng cao.
+• Khai thác AI hiệu quả trong tóm tắt tài liệu, giải thích khái niệm và tạo câu hỏi ôn tập.
+• Đánh giá ảnh hưởng của chất lượng prompt đối với kết quả đầu ra của AI.`,
+      process: `[Các tác vụ lựa chọn]: Tóm tắt bài đọc "Critical Period Hypothesis in SLA", Phân biệt Semantics và Pragmatics, Tạo bộ câu hỏi ôn tập "Communicative Language Teaching – CLT".
+
+[Xây dựng & Thử nghiệm Prompt]:
+• Thiết kế 3 phiên bản prompt cho mỗi tác vụ: Prompt cơ bản (ngắn gọn), Prompt cải tiến (bổ sung mục tiêu/cấu trúc), Prompt nâng cao (xác định vai trò, đối tượng, ngữ cảnh, ví dụ).
+• Chạy thử nghiệm trên ChatGPT, ghi lại kết quả 3 cấp độ và lập bảng so sánh theo tiêu chí: Độ chính xác, Mức độ đầy đủ, Tính rõ ràng, và Khả năng đáp ứng.`,
+      result: `Ba nguyên tắc viết prompt hiệu quả được đúc kết:
+1. Đưa ra chỉ dẫn rõ ràng và cụ thể.
+2. Cung cấp đầy đủ ngữ cảnh cần thiết.
+3. Xác định rõ vai trò của AI và đối tượng tiếp nhận.
+
+Kết luận: Prompt càng cụ thể và có cấu trúc thì kết quả đầu ra của AI càng phù hợp, chính xác và dễ đưa vào ứng dụng.`,
       report: "/docs/bai-3.pdf",
       status: "Hoàn Thành"
     },
     {
       id: 4,
-      title: "Bài 4: Hợp tác trực tuyến trong môi trường số",
+      title: "Bài 4: Hợp tác và quản lý dự án trực tuyến",
       chapter: "Chương 4",
-      shortDesc: "Sử dụng các nền tảng số để quản lý dự án và làm việc nhóm.",
-      skills: ["Quản lý dự án", "Giao tiếp số", "Công cụ hợp tác (Google Workspace/Notion)"],
-      target: "Trình bày minh chứng về việc sử dụng công cụ quản lý dự án nhóm và cách phối hợp.",
-      process: "Thiết lập không gian làm việc chung. Phân chia task rõ ràng, đặt deadline và theo dõi tiến độ qua bảng Kanban. Tổ chức họp nhóm qua Google Meet và ghi biên bản họp trực tuyến.",
+      shortDesc: "Phối hợp làm việc nhóm trên môi trường số, phân công nhiệm vụ và theo dõi tiến độ bằng công cụ trực tuyến.",
+      skills: ["Trello (Kanban)", "Google Docs/Drive", "Hợp tác nhóm số", "Quản lý tiến độ"],
+      target: `• Phát triển năng lực phối hợp và làm việc nhóm trên môi trường số; phân công nhiệm vụ, theo dõi tiến độ và quản lý tài liệu chung.
+• Sử dụng công cụ trực tuyến phù hợp với từng hoạt động của dự án.
+• Rèn luyện kỹ năng giao tiếp, điều phối và giải quyết vấn đề trong nhóm.`,
+      process: `[Dự án & Công cụ]: Hoàn thiện Reading Package cho học phần "Viết luận đại học" (Nhóm 3 thành viên). Công cụ: Trello (phân công/tiến độ), Google Docs (soạn thảo cộng tác), Google Drive (lưu trữ), Messenger & Google Meet (trao đổi/họp).
+
+[Quá trình làm việc & Giải pháp]:
+• Phân chia trách nhiệm rõ ràng, theo dõi tiến độ qua bảng Trello Kanban.
+• Cộng tác trực tiếp trên Google Docs và lưu trữ thống nhất trên Google Drive.
+• Giải quyết thách thức: Khó theo dõi tiến độ (dùng Trello), Trùng lặp nội dung (dùng Google Docs cộng tác), Giao tiếp hiểu sai (họp Google Meet trực tiếp).`,
+      result: `• Dự án được quản lý theo quy trình khoa học và rõ ràng.
+• Các thành viên phối hợp hiệu quả, hạn chế trùng lặp công việc.
+• Việc lựa chọn đúng công cụ giúp nâng cao đáng kể chất lượng và hiệu suất làm việc nhóm.`,
       report: "/docs/bai-4.pdf",
       status: "Hoàn Thành"
     },
     {
       id: 5,
-      title: "Bài 5: Sáng tạo nội dung số với AI",
+      title: "Bài 5: Ứng dụng AI trong sáng tạo nội dung số",
       chapter: "Chương 5",
-      shortDesc: "Tạo ra các sản phẩm truyền thông số có sự hỗ trợ của Trí tuệ nhân tạo.",
-      skills: ["Thiết kế số", "Tạo sinh hình ảnh/văn bản", "Công cụ thiết kế AI"],
-      target: "Trưng bày sản phẩm nội dung số hoàn thiện được hỗ trợ bởi AI.",
-      process: "Lên ý tưởng kịch bản bằng Gemini Pro. Sử dụng các công cụ tạo sinh (Midjourney/D-ALL E hoặc Canva AI) để thiết kế hình ảnh minh họa cho một bài thuyết trình về công nghệ. Tinh chỉnh thiết kế thủ công để đạt độ hoàn thiện cao.",
+      shortDesc: "Sử dụng AI tạo sinh để hỗ trợ tạo Infographic & thuyết trình, biên tập và bảo đảm minh bạch đạo đức.",
+      skills: ["AI Sáng tạo nội dung", "ChatGPT / Gemini", "Canva AI / Adobe Firefly", "Biên tập & Đạo đức AI"],
+      target: `• Sử dụng AI tạo sinh hỗ trợ sáng tạo nội dung số; hiểu rõ vai trò, điểm mạnh và hạn chế của từng công cụ AI.
+• Bảo đảm tính minh bạch, đạo đức và dấu ấn cá nhân trong sản phẩm.
+• Rèn luyện năng lực kiểm tra, biên tập và hoàn thiện nội dung do AI hỗ trợ.`,
+      process: `[Dự án & Công cụ]: Tạo Infographic và Bài thuyết trình ngắn về chủ đề "Ứng dụng AI trong việc nâng cao kỹ năng nói tiếng Anh của sinh viên đại học". Công cụ: ChatGPT, Google Gemini, Adobe Firefly, Canva AI.
+
+[Quá trình thực hiện]:
+• Sử dụng AI gợi ý ý tưởng và xây dựng nội dung ban đầu.
+• Tạo hình ảnh minh họa bằng công cụ AI, tích hợp và tinh chỉnh thiết kế trên Canva.
+• Lưu lại prompt, đầu ra AI, các bước chỉnh sửa cá nhân và sản phẩm hoàn thiện.`,
+      result: `• Đánh giá công cụ: AI hỗ trợ tốt trong việc gợi ý ý tưởng, viết bản nháp, tạo phương án thiết kế ban đầu; tuy nhiên còn hạn chế trong kiểm chứng thông tin thực tế và sắc thái bối cảnh.
+• Nguyên tắc đạo đức: Công khai việc sử dụng AI, không dùng nội dung AI chưa kiểm chứng làm bằng chứng học thuật, không sao chép nguyên văn đầu ra AI. Sản phẩm thể hiện rõ đóng góp cá nhân.`,
       report: "/docs/bai-5.pdf",
       status: "Hoàn Thành"
     },
     {
       id: 6,
-      title: "Bài 6: An toàn số, liêm chính học thuật và AI có trách nhiệm",
+      title: "Bài 6: Đạo đức AI và liêm chính học thuật",
       chapter: "Chương 6",
-      shortDesc: "Hiểu và áp dụng các quy tắc đạo đức khi sử dụng công nghệ và AI.",
-      skills: ["Bảo mật thông tin", "Trích dẫn tài liệu", "Đạo đức AI"],
-      target: "Trình bày bộ nguyên tắc cá nhân về sử dụng AI có trách nhiệm dựa trên các nghiên cứu.",
-      process: "Nghiên cứu các quy định về đạo văn và liêm chính. Đúc kết bộ 5 nguyên tắc cá nhân: Luôn kiểm chứng thông tin do AI tạo ra, minh bạch công cụ sử dụng, không dùng AI để thi hộ/làm hộ 100%, bảo vệ dữ liệu cá nhân khi chat với AI, và tôn trọng bản quyền.",
+      shortDesc: "Nghiên cứu chính sách, rèn luyện tư duy phản biện và xây dựng 7 nguyên tắc sử dụng AI có trách nhiệm.",
+      skills: ["Đạo đức AI", "Liêm chính học thuật", "Trích dẫn & Minh bạch", "7 Nguyên tắc AI trách nhiệm"],
+      target: `• Hiểu rõ giới hạn đạo đức khi sử dụng AI trong học tập và nghiên cứu; phân biệt giữa hỗ trợ hợp lý và gian lận học thuật.
+• Sử dụng AI minh bạch, có kiểm chứng và có trách nhiệm.
+• Xây dựng nguyên tắc cá nhân để bảo đảm liêm chính học thuật.`,
+      process: `[Nghiên cứu chính sách & Thực hành]:
+• Tìm hiểu quy định ĐHQGHN về AI: Không cấm tuyệt đối nhưng yêu cầu minh bạch, đạo đức số và chịu trách nhiệm về sản phẩm.
+• Thực hành bài thuyết trình "The role of English podcasts and short videos in improving students’ listening and speaking confidence" (Dùng AI gợi ý dàn ý, diễn đạt, phản biện; người học tự kiểm tra thông tin, chỉnh sửa và bổ sung ví dụ cá nhân).
+
+[7 Nguyên tắc sử dụng AI có trách nhiệm]:
+1. Chỉ sử dụng khi cho phép. 2. Công khai công cụ & mục đích. 3. Không nộp nguyên văn đầu ra AI. 4. Không cung cấp dữ liệu riêng tư. 5. Không dùng nguồn giả do AI tạo. 6. Kiểm chứng bằng nguồn chính thức. 7. Trợ lực tư duy, không thay thế quá trình học.`,
+      result: `• Hoàn thiện Infographic về 7 nguyên tắc sử dụng AI đúng đắn.
+• Nhận thức sâu sắc rằng AI chỉ là công cụ hỗ trợ, không thay thế trách nhiệm người học.
+• Việc sử dụng AI hiệu quả đòi hỏi bảo đảm 3 yếu tố: Minh bạch, Kiểm chứng, và Có đóng góp cá nhân rõ ràng.`,
       report: "/docs/bai-6.pdf",
       status: "Hoàn Thành"
     }
